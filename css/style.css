@@ -228,14 +228,14 @@ header {
 
 #banner-wrap {
 	clear: both;
-	background: url(../img/bannerInnerBg.jpg);
+	background: url(../img/bannerBG.jpg);
 	padding-bottom: 15px;
 	border-bottom: 1px solid #bba67b;
 	padding-top: 45px;
 }
 
 	#banner {
-		background: url(../img/BannerInnerBg.jpg);
+		background: url(../img/bannerInnerBg.jpg);
 		padding: 40px 40px 50px;
 		width: 880px;
 		color: white;
