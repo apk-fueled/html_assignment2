@@ -32,6 +32,8 @@ var Site = {
 
 					// show correspondong sections
 					uls.hide().filter(hash).show();
+
+					e.preventDefault();
 			});
 	}
 }

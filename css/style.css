@@ -13,7 +13,7 @@ section, header, footer, aside, article, nav {
 ****************************/
 
 body {
-	background: #f8eedf url(../img/bg.jpg) repeat-x;
+	background: #f8eedf url(../img/bg1.jpg) repeat-x;
 }
 
 a{
@@ -184,8 +184,8 @@ header {
 			box-shadow: 0 0 0 1px white;
 		}
 		*/
-		#headSocial > li {
-			
+		#headSocial li:first-child img {
+			margin-top: -20px;	
 		}
 
 		/****************************
@@ -204,6 +204,7 @@ header {
 			text-shadow: 0 -1px 0 black;
 			margin-bottom: 0;
 			position: relative;
+			margin-left: 65px;
 			
 		}
 
@@ -218,7 +219,7 @@ header {
 			padding: 5px 20px;
 			border: 1px solid #206577;
 			color: white;
-			margin-left: 52px;
+			/*margin-left: 52px;*/
 
 		}
 
@@ -297,6 +298,7 @@ header {
 			width: 880px;
 			color: white;
 			text-shadow: 0 -1px 0 # 176482;
+			padding-top: 5px;
 		}
 			#breadcrumbs a {
 				color: white;
@@ -374,7 +376,8 @@ header {
 			font-family: Gotham Rounded;
 			font-style: Light;
 			text-transform: none;
-			font-weight: normal;
+			font-weight: bold;
+
 		}
 		article h2 a:hover {
 			text-decoration: none;
@@ -716,9 +719,9 @@ textarea, #timeScale {
 textarea {
 	height: 90px; 
 }
-
-#footer-wrap input:hover, textarea:hover, button:hover,
-input:focus, textarea:focus, button:focus {
+/*
+#footer-wrap input[type="text"]:hover, textarea:hover, button:hover,
+input[type="text"]:focus, textarea:focus, button:focus {
 	-webkit-box-shadow: 0 0 5px #061b20;
 	-moz-box-shadow: 0 0 5px #061b20;
 	box-shadow: 0 0 5px #061b20;
@@ -726,11 +729,11 @@ input:focus, textarea:focus, button:focus {
 	box-shadow: 0 0 5px #061b20;
 	background: #eddbc0;
 }
+*/
 
 
-
-input[type="text"]:hover, input[type="text"]:focus {
-	#background: #eddbc0;
+#footer-wrap input[type="text"]:hover, #footer-wrap input[type="text"]:focus , textarea:hover, textarea:focus {
+	background: #eddbc0;
 }
 
 #footer2 {
@@ -738,8 +741,12 @@ input[type="text"]:hover, input[type="text"]:focus {
 }
 
 #footer2 button {
-	-moz-border-radius: 1px;
-	-webkit-border-radius: 1px;
-	border-radius: 1px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
 	font-family: merriweather;
+}
+
+#footer2 section:nth-child(2) button {
+	margin-right: 27px;
 }
